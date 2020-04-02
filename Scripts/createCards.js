@@ -6,7 +6,7 @@ var getCards = () => {
         let theme = (i < 4 && !(i % 2)) || (i >= 4 && i % 2) ? 'bg-dark' : 'bg-secondary' ;
 
         let card = document.createElement('div');
-        card.className = "card col-md-3 text-white " + theme;
+        card.className = "card col-lg-3 col-md-4 text-white " + theme;
 
         let image = document.createElement('img');
         image.src = './Images/Components/' + component.img;
