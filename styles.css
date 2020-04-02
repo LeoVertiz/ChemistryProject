@@ -31,3 +31,16 @@ header:hover span, header:hover h1{
     background-color: rgba(0, 0, 0, .6);
     color: #ccc;
 }
+
+footer{
+    margin-top: 2em;
+    background: black;
+    color: white;
+    padding: 2em 0;
+    border-top: 1em dotted #ccc;
+    border-top-style: double;
+    font-size: 1.1em;
+}
+footer li{
+    font-size: 1.3em;
+}
