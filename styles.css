@@ -34,7 +34,8 @@ header:hover span, header:hover h1{
 
 footer{
     margin-top: 2em;
-    background: black;
+    /* background: #111; */
+    background-image: url('./Images/footer.jpg');
     color: white;
     padding: 2em 0;
     border-top: 1em dotted #ccc;
@@ -42,5 +43,5 @@ footer{
     font-size: 1.1em;
 }
 footer li{
-    font-size: 1.3em;
+    font-size: 1.2em;
 }

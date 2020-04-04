@@ -4,9 +4,10 @@ var getCards = () => {
         let containerId = i < 4 ? 'components1' : 'components2';
         let container = document.getElementById(containerId);
         let theme = (i < 4 && !(i % 2)) || (i >= 4 && i % 2) ? 'bg-dark' : 'bg-secondary' ;
-
+        
         let card = document.createElement('div');
-        card.className = "card col-lg-3 col-md-4 text-white " + theme;
+        card.id = 'component' + i;
+        card.className = "card col-lg-3 text-white " + theme;
 
         let image = document.createElement('img');
         image.src = './Images/Components/' + component.img;
@@ -34,5 +35,10 @@ var getCards = () => {
         card.appendChild(image);
         card.appendChild(content);
         container.appendChild(card);
+        card.addEventListener('click', handleClick);
     }
+}
+
+var handleClick = e => {
+    console.log(e);
 }
