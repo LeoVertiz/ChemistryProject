@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./Styles/styles.css">
+    <link rel="stylesheet" href="./Styles/curComponent.css">
     <title>Proyecto Quimica</title>
 </head>
 <body>
@@ -14,6 +15,25 @@
     </header>
 
     <main class="container">
+
+        <div id="curComponent" class="row">
+            <div class="clearfix col-lg-1"></div>
+            <div class="cont col-lg-10">
+                <button id="ccClose" class="btn btn-danger">Cerrar</button>
+                <div class="clearfix"></div>
+                <div class="row">
+                    <div class="col-lg-8 text-center">
+                        <h2 id="ccTitle"></h2>
+                        <img id="ccImg">
+                        <p id="ccDesc"></p>
+                    </div>
+                    <div class="col-lg-4" style="padding-top: 4em;">
+                        <h3>Elementos Principales:</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div id="banner">
         <div class="jumbotron">
             <div class="container">
@@ -39,7 +59,7 @@
                     <ul>
                         <li>Natalia Esperanza Morales Morales</li>
                         <li>Leonardo Demian Vertiz Arvizu</li>
-                        <li>Leonardo Zuñiga</li>
+                        <li>Leonardo Zuñiga Almaraz</li>
                     </ul>
                 </div>
             </div>
@@ -61,6 +81,7 @@
     <!-- END-BOOTSTRAP -->
 
     <script src="./Scripts/vars.js"></script>
+    <script src="./Scripts/curComponent.js"></script>
     <script src="./Scripts/createCards.js"></script>
     <script src="./Scripts/main.js"></script>
     <script> main(); </script>

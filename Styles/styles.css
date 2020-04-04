@@ -1,3 +1,8 @@
+.clearfix{
+    clear: both;
+    float: none;
+}
+
 body{
     background: #ccc;
 }
@@ -24,7 +29,7 @@ header:hover span, header:hover h1{
 }
 
 #banner{
-    background-image: url(./Images/banner.jpg);
+    background-image: url(../Images/banner.jpg);
     background-attachment: fixed;
 }
 .jumbotron{
@@ -35,7 +40,7 @@ header:hover span, header:hover h1{
 footer{
     margin-top: 2em;
     /* background: #111; */
-    background-image: url('./Images/footer.jpg');
+    background-image: url('../Images/footer.jpg');
     color: white;
     padding: 2em 0;
     border-top: 1em dotted #ccc;

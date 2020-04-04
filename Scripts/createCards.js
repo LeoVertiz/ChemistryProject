@@ -7,7 +7,7 @@ var getCards = () => {
         
         let card = document.createElement('div');
         card.id = 'component' + i;
-        card.className = "card col-lg-3 text-white " + theme;
+        card.className = "card col-sm-3 text-white " + theme;
 
         let image = document.createElement('img');
         image.src = './Images/Components/' + component.img;
@@ -30,15 +30,20 @@ var getCards = () => {
         button.className = 'btn btn-primary';
         button.href = '#';
         button.textContent = 'La quimica de ' + component.title;
+        button.addEventListener('click', () => handleClick(i));
         content.appendChild(button);
 
         card.appendChild(image);
         card.appendChild(content);
         container.appendChild(card);
-        card.addEventListener('click', handleClick);
     }
 }
 
-var handleClick = e => {
-    console.log(e);
+var handleClick = i => {
+    state.curComponent = components[i];
+    let component = state.curComponent;
+    document.getElementById('ccTitle').textContent = component.title;
+    document.getElementById('ccDesc').textContent = component.text;
+    document.getElementById('ccImg').src = './Images/Components/' + component.img;
+    showCurComponent();
 }

@@ -1,0 +1,23 @@
+#curComponent{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    overflow: hidden;
+}
+#curComponent .cont{
+    position: relative;
+    background: white;
+    margin: 3em 0;
+    padding: 2em;
+}
+#ccClose{
+    float: right;
+}
+#ccImg{
+    max-width: 30%;
+    margin: 2em 0;
+}
