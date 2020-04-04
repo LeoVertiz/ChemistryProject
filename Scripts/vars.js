@@ -2,7 +2,8 @@ var components = [
     {
         title: "Placa Madre",
         text: "La placa madre es un elemento fundamental en una computadora dado que es la encargada de entrelazar o comunicar todas las demás partes, placas periféricos y demás componente uno entre otro.",
-        img: "placaMadre.png"
+        img: "placaMadre.png",
+        elements: ['Cobre[Cu]', 'Hierro[Fe]', 'Silicio[Si]', 'Oxigeno[O]', 'Cloro[Cl]']
     },
     {
         title: "Procesador",

@@ -1,4 +1,5 @@
 var hideCurComponent = () => {
+    document.getElementById('ccElements').innerHTML = null;
     document.getElementById('curComponent').className = 'row d-none';
 }
 var showCurComponent = () => {
@@ -7,4 +8,5 @@ var showCurComponent = () => {
 document.getElementById('ccClose').addEventListener('click', () => {
     state.curComponent = null;
     hideCurComponent();
+    
 });

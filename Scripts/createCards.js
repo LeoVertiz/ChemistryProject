@@ -45,5 +45,22 @@ var handleClick = i => {
     document.getElementById('ccTitle').textContent = component.title;
     document.getElementById('ccDesc').textContent = component.text;
     document.getElementById('ccImg').src = './Images/Components/' + component.img;
+
+    
+    if(component.elements)
+        for(let i = 0; i < component.elements.length; i++) {
+            let element = component.elements[i];
+            let lis = document.createElement('li');
+            let as = document.createElement('button');
+            as.href = '#';
+            as.innerHTML = '<i class="fas fa-atom"></i> ' + element;
+            if(i%5 == 1) as.className = 'btn btn-outline-warning btn-lg';
+            else if(i%5 == 2) as.className = 'btn btn-outline-success btn-lg';
+            else if(i%5 == 3) as.className = 'btn btn-outline-danger btn-lg';
+            else if(i%5 == 4) as.className = 'btn btn-outline-dark btn-lg';
+            else as.className = 'btn btn-outline-info btn-lg';
+            lis.appendChild(as);
+            document.getElementById('ccElements').appendChild(lis);
+        }
     showCurComponent();
 }
